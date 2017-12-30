@@ -1,0 +1,11 @@
+$mainGreen: #00ff00;
+
+body {
+	color: $mainGreen;
+	margin: 10px;
+	columns: 200px 3;
+
+	a {
+		display: block;
+	}
+}
