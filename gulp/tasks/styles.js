@@ -10,5 +10,9 @@ gulp.task('styles', function(){
 	// return to let Gulp be aware when gulp.src() completes; gulp.src() is an asynchronous function
 	return gulp.src('./app/assets/css/*.css')
 		.pipe(postcss([autoprefixer, cssvars, nested, cssnano]))
+		.on('error', function(error) {
+			console.log(error.toString());
+			this.emit('end');
+		})
 		.pipe(gulp.dest('./app/assets/bundled/css'));
 });
