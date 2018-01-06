@@ -85,7 +85,7 @@ function Person(name, favColor) {
 	this.favColor = favColor;
 	
 	this.greet = function() {
-		console.log("Hello, my name is " + this.name + " and my favorite color is " + favColor + ".");
+		console.log("Hi, my name is " + this.name + " and my favorite color is " + this.favColor + ".");
 	}
 }
 

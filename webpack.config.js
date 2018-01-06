@@ -7,7 +7,7 @@ module.exports = {
 		'003-app_jquery': './js/003-app_jquery.js',
 	},
 	output: {
-		path: path.resolve(__dirname, "./js/bundled"),
+		path: path.resolve(__dirname, "./bundled/js"),
 		filename: '[name].js'
 	}
 }
