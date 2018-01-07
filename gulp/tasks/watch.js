@@ -5,13 +5,13 @@ browserSync = require('browser-sync').create(); // https://www.npmjs.com/package
 gulp.task('watch', function() {
 	browserSync.init({
 		server: {
-			baseDir: "./app/assets/",
+			baseDir: "./app/",
 			directory: true			
 		},
 		port: 9999
 	});
 
-	watch('./app/assets/*.html', function(){
+	watch('./app/*.html', function(){
 		// gulp.start('html');
 		browserSync.reload();
 	});
